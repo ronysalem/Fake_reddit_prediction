@@ -101,40 +101,18 @@ pip install scikit-optimize
 
 The README can include details of different model training trials, such as Logistic Regression and XGBoost, with information about the hyperparameter search, scoring, and results. This section can be structured similarly to the following examples:
 
-### Trial 1
 
-- Classifier: Logistic Regression
-- Search: Random Search CV
-- Preprocessing: TfidfVectorizer with word n-grams
-- Public Score: 0.81155
+## Key Trials
 
-### Trial 2
+| Trial   | Classifier          | Search           | Preprocessing                        | Public Score |
+| ------- | ------------------- | ---------------- | ------------------------------------ | ------------ |
+| Trial 1 | Logistic Regression | Random Search CV | TfidfVectorizer with word n-grams   | 0.81155      |
+| Trial 2 | XGBoosting          | Random Search CV | TfidfVectorizer with word n-grams   | 0.78612      |
+| Trial 3 | Logistic Regression | Grid Search CV   | TfidfVectorizer with word n-grams   | 0.83756      |
+| Trial 4 | Logistic Regression | Random Search CV | Text embedding                       | 0.85532      |
+| Trial 5 | XGBoosting          | Random Search CV | TfidfVectorizer with character n-grams | 0.77701      |
 
-- Classifier: XGBoosting
-- Search: Random Search CV
-- Preprocessing: TfidfVectorizer with word n-grams
-- Public Score: 0.78612
-
-### Trial 3 (Optimal Solution)
-
-- Classifier: Logistic Regression
-- Search: Grid Search CV
-- Preprocessing: TfidfVectorizer with word n-grams
-- Public Score: 0.83756
-
-### Trial 4 (Optimal Solution with Text Embedding)
-
-- Classifier: Logistic Regression
-- Search: Random Search CV
-- Preprocessing: Text embedding
-- Public Score: 0.85532
-
-### Trial 5
-
-- Classifier: XGBoosting
-- Search: Random Search CV
-- Preprocessing: TfidfVectorizer with character n-grams
-- Public Score: 0.77701
+This table provides a summary of the different trials, including the classifier used, the search method, the preprocessing techniques, and the corresponding public scores.
 
 ## Questions
 
